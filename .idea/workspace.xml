@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f07d4d11-5e69-41df-ba90-90774de57090" name="Changes" comment="initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="f07d4d11-5e69-41df-ba90-90774de57090" name="Changes" comment="TDD-chap02&#10; - TDD 개념 및 실습(암호 검사기)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +51,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.PasswordStrengthMeterTest">
+  <component name="RunManager" selected="Gradle.ExpiryDateCalculatorTest">
     <configuration name="CalculatorTest.plus" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -67,6 +66,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;chap02.CalculatorTest.plus&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ExpiryDateCalculatorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;chap03.ExpiryDateCalculatorTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -124,6 +146,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ExpiryDateCalculatorTest" />
         <item itemvalue="Gradle.PasswordStrengthMeterTest" />
         <item itemvalue="Gradle.PasswordStrengthMeterTest.meetsAllCriteria_Then_Strong" />
         <item itemvalue="Gradle.CalculatorTest.plus" />
@@ -141,7 +164,8 @@
       <workItem from="1672837755739" duration="3031000" />
       <workItem from="1672840833436" duration="57000" />
       <workItem from="1672840896789" duration="149000" />
-      <workItem from="1672841053383" duration="3325000" />
+      <workItem from="1672841053383" duration="3531000" />
+      <workItem from="1673086844903" duration="7968000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1672838158744</created>
@@ -150,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672838158744</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="TDD-chap02&#10; - TDD 개념 및 실습(암호 검사기)">
+      <created>1672844516462</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672844516462</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,7 +189,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="TDD-chap02&#10; - TDD 개념 및 실습(암호 검사기)" />
+    <option name="LAST_COMMIT_MESSAGE" value="TDD-chap02&#10; - TDD 개념 및 실습(암호 검사기)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
