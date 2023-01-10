@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f07d4d11-5e69-41df-ba90-90774de57090" name="Changes" comment="TDD-chap03&#10; - 테스트 작성 순서 및 예제(유료서비스의 만료일)">
+    <list default="true" id="f07d4d11-5e69-41df-ba90-90774de57090" name="Changes" comment="TDD-chap07&#10; - 대역(stub, fake, spy)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -50,19 +51,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/ljh/Intellij Project/test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ljh\Intellij Project\TDD\src\main\java\chap07_ex02" />
@@ -71,8 +73,8 @@
       <recent name="chap07" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UserRegisterTest">
-    <configuration name="ExpiryDateCalculatorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.UserRegisterMockTest">
+    <configuration name="AnyMatcherTest.anyMatchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -85,7 +87,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;chap03.ExpiryDateCalculatorTest&quot;" />
+            <option value="&quot;mock.AnyMatcherTest.anyMatchTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -95,7 +97,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PasswordStrengthMeterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AnyMatcherTest.mixAnyAndEq" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -108,7 +110,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;chap02.PasswordStrengthMeterTest&quot;" />
+            <option value="&quot;mock.AnyMatcherTest.mixAnyAndEq&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -118,7 +120,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserRegisterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GameTest.init" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -131,7 +133,53 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;chap07.UserRegisterTest&quot;" />
+            <option value="&quot;mock.GameTest.init&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserRegisterMockTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;chap07_ex02.UserRegisterMockTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserRegisterMockTest.whenRegisterThenSendMail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;mock.UserRegisterMockTest.whenRegisterThenSendMail&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -164,36 +212,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserRegisterTest.weakPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;chap07.UserRegisterTest.weakPassword&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.UserRegisterTest" />
-        <item itemvalue="Gradle.UserRegisterTest" />
-        <item itemvalue="Gradle.UserRegisterTest.weakPassword" />
-        <item itemvalue="Gradle.ExpiryDateCalculatorTest" />
-        <item itemvalue="Gradle.PasswordStrengthMeterTest" />
+        <item itemvalue="Gradle.UserRegisterMockTest" />
+        <item itemvalue="Gradle.UserRegisterMockTest.whenRegisterThenSendMail" />
+        <item itemvalue="Gradle.GameTest.init" />
+        <item itemvalue="Gradle.AnyMatcherTest.mixAnyAndEq" />
+        <item itemvalue="Gradle.AnyMatcherTest.anyMatchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +238,8 @@
       <workItem from="1673097153112" duration="11000" />
       <workItem from="1673176141743" duration="4343000" />
       <workItem from="1673183649589" duration="43000" />
-      <workItem from="1673269945663" duration="6903000" />
+      <workItem from="1673269945663" duration="6988000" />
+      <workItem from="1673355442168" duration="5515000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1672838158744</created>
@@ -236,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673096642752</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="TDD-chap07&#10; - 대역(stub, fake, spy)">
+      <created>1673276891696</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673276891696</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +279,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="TDD-chap02&#10; - TDD 개념 및 실습(암호 검사기)" />
     <MESSAGE value="TDD-chap03&#10; - 테스트 작성 순서 및 예제(유료서비스의 만료일)" />
-    <option name="LAST_COMMIT_MESSAGE" value="TDD-chap03&#10; - 테스트 작성 순서 및 예제(유료서비스의 만료일)" />
+    <MESSAGE value="TDD-chap07&#10; - 대역(stub, fake, spy)" />
+    <option name="LAST_COMMIT_MESSAGE" value="TDD-chap07&#10; - 대역(stub, fake, spy)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
